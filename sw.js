@@ -5,9 +5,9 @@
 // - Los CSV y Google Apps Script NO pasan por aquí: los CSV ya se guardan en IndexedDB desde la app.
 // Si cambias las versiones de las librerías en movilec.html, cámbialas también aquí y sube VERSION.
 
-const VERSION = 'pruebas-v1';
+const VERSION = 'pruebas-v2';
 
-const ARCHIVOS_APP = ['./', 'pruebas.html', 'manifest-pruebas.json', 'icono-pruebas-192.png', 'icono-pruebas.png', 'icono.png'];
+const ARCHIVOS_APP = ['./', 'pruebas.html', 'manifest-pruebas.json', 'icono-360-192.png', 'icono-360.png'];
 const LIBRERIAS = [
     'https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js',
     'https://unpkg.com/@zxing/library@0.23.0/umd/index.min.js',

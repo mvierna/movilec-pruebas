@@ -1,7 +1,7 @@
 {
   "id": "./pruebas.html",
-  "name": "MOVILEC Pruebas",
-  "short_name": "MOVILEC Pruebas",
+  "name": "MOVILEC 360",
+  "short_name": "MOVILEC 360",
   "start_url": "./pruebas.html",
   "scope": "./",
   "display": "fullscreen",
@@ -10,17 +10,7 @@
   "background_color": "#eef4f9",
   "theme_color": "#0b70b5",
   "icons": [
-    {
-      "src": "icono-pruebas-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icono-pruebas.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    }
+    { "src": "icono-360-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icono-360.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
   ]
 }
