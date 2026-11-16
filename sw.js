@@ -5,7 +5,7 @@
 // - Los CSV y Google Apps Script NO pasan por aquí: los CSV ya se guardan en IndexedDB desde la app.
 // Si cambias las versiones de las librerías en movilec.html, cámbialas también aquí y sube VERSION.
 
-const VERSION = 'pruebas-v10';
+const VERSION = 'pruebas-v11';
 
 const ARCHIVOS_APP = ['./', 'pruebas.html', 'manifest-pruebas.json', 'icono-360-192.png', 'icono-360.png'];
 const LIBRERIAS = [
@@ -62,7 +62,7 @@ self.addEventListener('fetch', event => {
     // cache 'no-cache': obliga a comprobar con el servidor y no usar la caché HTTP del navegador.
     event.respondWith(
         fetch(req, { cache: 'no-cache' }).then(resp => {
-            if (resp.ok) { const copia = resp.clone(); caches.open(VERSION).then(cache => cache.put(req, copia)); }
+            if (resp.ok && !url.search) { const copia = resp.clone(); caches.open(VERSION).then(cache => cache.put(req, copia)); }
             return resp;
         }).catch(() =>
             caches.match(req, { ignoreSearch: true }).then(guardada => guardada || Response.error())
