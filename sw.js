@@ -5,7 +5,7 @@
 // - Los CSV y Google Apps Script NO pasan por aquí: los CSV ya se guardan en IndexedDB desde la app.
 // Si cambias las versiones de las librerías en movilec.html, cámbialas también aquí y sube VERSION.
 
-const VERSION = 'pruebas-v52';
+const VERSION = 'pruebas-v53';
 
 const ARCHIVOS_APP = ['./', 'pruebas.html', 'manifest-pruebas.json', 'icono-360-192.png', 'icono-360.png'];
 const LIBRERIAS = [
